@@ -61,6 +61,7 @@ huskylens.initI2c()
 huskylens.initMode(protocolAlgorithm.OBJECTCLASSIFICATION)
 p = 70
 n = -70
+basic.showIcon(IconNames.Heart)
 basic.forever(function () {
     huskylens.request()
     if (huskylens.isAppear(1, HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
